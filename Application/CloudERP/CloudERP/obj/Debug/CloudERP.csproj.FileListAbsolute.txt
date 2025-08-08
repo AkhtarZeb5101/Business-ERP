@@ -1,0 +1,249 @@
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\CloudERP.dll.config
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\CloudERP.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\CloudERP.pdb
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\csc.exe
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\csc.exe.config
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\csc.rsp
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\csi.exe
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\csi.exe.config
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\csi.rsp
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.Managed.Core.targets
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.AppContext.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Collections.Immutable.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Console.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Compression.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.IO.FileSystem.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Pipes.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Reflection.Metadata.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Security.AccessControl.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Claims.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Principal.Windows.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.ValueTuple.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XmlDocument.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XPath.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\vbc.exe
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\vbc.exe.config
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\vbc.rsp
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\VBCSCompiler.exe
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\roslyn\VBCSCompiler.exe.config
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\Antlr3.Runtime.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\DatabaseAccess.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\EntityFramework.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\EntityFramework.SqlServer.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\Microsoft.Web.Infrastructure.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\Newtonsoft.Json.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Helpers.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Mvc.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Optimization.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Razor.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Deployment.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.WebPages.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Razor.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\WebGrease.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\DatabaseAccess.pdb
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\DatabaseAccess.dll.config
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\EntityFramework.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\EntityFramework.SqlServer.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Helpers.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Mvc.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Optimization.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.Razor.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.WebPages.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Deployment.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Razor.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\Newtonsoft.Json.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\Antlr3.Runtime.pdb
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csprojAssemblyReference.cache
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.CoreCompileInputs.cache
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.CopyComplete
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\obj\Debug\CloudERP.dll
+D:\FYP Company Mgt Sys(Cloud ERP) Small Business\Application\CloudERP\CloudERP\obj\Debug\CloudERP.pdb
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\CloudERP.dll.config
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\CloudERP.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\CloudERP.pdb
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csc.exe
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csc.exe.config
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csc.rsp
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csi.exe
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csi.exe.config
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csi.rsp
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.AppContext.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Collections.Immutable.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Console.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Compression.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.FileSystem.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Pipes.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Reflection.Metadata.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.AccessControl.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Claims.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.ValueTuple.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XPath.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\vbc.exe
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\vbc.exe.config
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\vbc.rsp
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\VBCSCompiler.exe
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\VBCSCompiler.exe.config
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Antlr3.Runtime.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\DatabaseAccess.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.SqlServer.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Microsoft.Web.Infrastructure.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Newtonsoft.Json.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Helpers.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Mvc.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Optimization.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Razor.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Deployment.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Razor.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\WebGrease.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\DatabaseAccess.pdb
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\DatabaseAccess.dll.config
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.SqlServer.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Helpers.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Mvc.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Optimization.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Razor.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Deployment.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Razor.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Newtonsoft.Json.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Antlr3.Runtime.pdb
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.AssemblyReference.cache
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.CoreCompileInputs.cache
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.Up2Date
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.dll
+D:\Business ERP\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.pdb
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\CloudERP.dll.config
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\CloudERP.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\CloudERP.pdb
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csc.exe
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csc.exe.config
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csc.rsp
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csi.exe
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csi.exe.config
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\csi.rsp
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.AppContext.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Collections.Immutable.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Console.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Compression.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.FileSystem.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.IO.Pipes.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Reflection.Metadata.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.AccessControl.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Claims.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.ValueTuple.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XPath.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\vbc.exe
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\vbc.exe.config
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\vbc.rsp
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\VBCSCompiler.exe
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\roslyn\VBCSCompiler.exe.config
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Antlr3.Runtime.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\DatabaseAccess.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.SqlServer.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Microsoft.Web.Infrastructure.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Newtonsoft.Json.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Helpers.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Mvc.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Optimization.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Razor.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Deployment.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Razor.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\WebGrease.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\DatabaseAccess.pdb
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\DatabaseAccess.dll.config
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\EntityFramework.SqlServer.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Helpers.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Mvc.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Optimization.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.Razor.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Deployment.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\System.Web.WebPages.Razor.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Newtonsoft.Json.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Antlr3.Runtime.pdb
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.AssemblyReference.cache
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.CoreCompileInputs.cache
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.csproj.Up2Date
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.dll
+D:\Business ERP (Uroosa Khattak FYP)\Business ERP Source Code + Database\Application\CloudERP\CloudERP\obj\Debug\CloudERP.pdb

@@ -1,0 +1,105 @@
+﻿@model IEnumerable<DatabaseAccess.tblSupplier>
+
+@{
+    ViewBag.Title = "Finilize Purchasing";
+}
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+@using (Html.BeginForm("PurchaseConfirm", "PurchaseCart", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+<div class="form-horizontal">
+    <h4>Purchase Details</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <h3 class="text-danger">@ViewBag.Message</h3>
+    <div class="form-group">
+        <label class="control-label col-md-2">Purachse Description</label>
+        <div class="col-md-12">
+            <input type="text" class="form-control" id="item.Description" , name="item.Description" placeholder="Enter Purchase Description" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Is Purchase Payment Paid?</label>
+        <div class="col-md-12">
+            <input type="checkbox" name="IsPayment" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+
+        </div>
+    </div>
+</div>
+
+    <div class="card">
+        <div class="card card-flat">
+            <div class="card-header">
+
+                <input type="submit" style="float:right;" value="Finilize Purchase" class="btn btn-success" />
+                <input type="text" id="search" name="search" class="form-control col-md-3" style="float:left;" placeholder="search here" />
+            </div>
+            <div class="card-body">
+                <!-- START table-responsive-->
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover" id="dataTable">
+                        <thead style="background-color:lightgray;">
+                            <tr>
+               
+                                <th>
+                                    Supplier
+                                </th>
+                                <th>
+                                    Contact No
+                                </th>
+
+                                <th>
+                                    Supplier Email
+                                </th>
+
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="supplierlist">
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+           
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SupplierName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SupplierConatctNo)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SupplierEmail)
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="name @item.SupplierID" class="chb" />
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#search").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#supplierlist tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+        $(".chb").change(function (event) {
+            $(".chb").prop('checked', false);
+            $(this).prop('checked', true);
+
+        });
+    });
+</script>

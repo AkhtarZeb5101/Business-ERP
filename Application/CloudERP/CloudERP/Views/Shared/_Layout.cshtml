@@ -1,0 +1,1062 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Bootstrap Admin App + jQuery">
+    <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+    <title> @ViewBag.Title</title>
+    <!-- =============== VENDOR STYLES ===============-->
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="~/Content/Template/vendor/font-awesome/css/font-awesome.css">
+    <!-- SIMPLE LINE ICONS-->
+    <link rel="stylesheet" href="~/Content/Template/vendor/simple-line-icons/css/simple-line-icons.css">
+    <!-- ANIMATE.CSS-->
+    <link rel="stylesheet" href="~/Content/Template/vendor/animate.css/animate.css">
+    <!-- WHIRL (spinners)-->
+    <link rel="stylesheet" href="~/Content/Template/vendor/whirl/dist/whirl.css">
+    <!-- =============== PAGE VENDOR STYLES ===============-->
+    <!-- Datatables-->
+    <link rel="stylesheet" href="~/Content/Template/vendor/datatables.net-bs4/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="~/Content/Template/vendor/datatables.net-keytable-bs/css/keyTable.bootstrap.css">
+    <link rel="stylesheet" href="~/Content/Template/vendor/datatables.net-responsive-bs/css/responsive.bootstrap.css">
+    <!-- =============== BOOTSTRAP STYLES ===============-->
+    <link rel="stylesheet" href="~/Content/Template/css/bootstrap.css" id="bscss">
+    <!-- =============== APP STYLES ===============-->
+    <link rel="stylesheet" href="~/Content/Template/css/app.css" id="maincss">
+    <!-- Bootgrid-->
+    <link rel="stylesheet" href="~/Content/Template/vendor/jquery-bootgrid/dist/jquery.bootgrid.css">
+    <link rel="stylesheet" href="vendor/weather-icons/css/weather-icons.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+ 
+                <!-- top navbar-->
+                <header class="topnavbar-wrapper">
+                    <!-- START Top Navbar-->
+                    <nav class="navbar topnavbar">
+                        <!-- START navbar header-->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#/">
+                                <div class="brand-logo">
+                                    @{
+
+                                        string logo = string.Empty;
+                                        if (string.IsNullOrEmpty(Convert.ToString(Session["Logo"])))
+                                        {
+                                            logo = "~/Content/Template/img/logo-single.png";
+                                        }
+                                        else
+                                        {
+                                            logo = Convert.ToString(Session["Logo"]);
+                                        }
+
+
+
+                                    }
+                                    <img class="img-fluid" src="@Url.Content(logo)" alt="App Logo" height="30" width="30">
+                                </div>
+                                <div class="brand-logo-collapsed">
+                                    <img class="img-fluid" src="@Url.Content(logo)" alt="App Logo" height="30" width="30">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END navbar header-->
+                        <!-- START Left navbar-->
+                        <ul class="navbar-nav mr-auto flex-row">
+                            <li class="nav-item">
+                                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+                                <a class="nav-link d-none d-md-block d-lg-block d-xl-block" href="#" data-trigger-resize="" data-toggle-state="aside-collapsed">
+                                    <em class="fa fa-navicon"></em>
+                                </a>
+                                <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->
+                                <a class="nav-link sidebar-toggle d-md-none" href="#" data-toggle-state="aside-toggled" data-no-persist="true">
+                                    <em class="fa fa-navicon"></em>
+                                </a>
+                            </li>
+                            <!-- START User avatar toggle-->
+                            <li class="nav-item d-none d-md-block">
+                                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+                                <a class="nav-link" id="user-block-toggle" href="#user-block" data-toggle="collapse">
+                                    <em class="icon-user"></em>
+                                </a>
+                            </li>
+                            <!-- END User avatar toggle-->
+                            <!-- START lock screen-->
+                            <li class="nav-item d-none d-md-block">
+
+                                <a class="nav-link" href="@Url.Action("Logout", "Home")" title="Lock screen">
+                                    <em class="icon-lock"></em>
+                                </a>
+                            </li>
+                            <!-- END lock screen-->
+                        </ul>
+                        <!-- END Left navbar-->
+                        <!-- START Right Navbar-->
+                        <ul class="navbar-nav flex-row">
+                            <!-- Search icon-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-search-open="">
+                                    <em class="icon-magnifier"></em>
+                                </a>
+                            </li>
+                            <!-- Fullscreen (only desktops)-->
+                            <li class="nav-item d-none d-md-block">
+                                <a class="nav-link" href="#" data-toggle-fullscreen="">
+                                    <em class="fa fa-expand"></em>
+                                </a>
+                            </li>
+                            <!-- START Alert menu-->
+                            <li class="nav-item dropdown dropdown-list">
+                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" data-toggle="dropdown">
+                                    <em class="icon-bell"></em>
+                                    <span class="badge badge-danger">11</span>
+                                </a>
+                                <!-- START Dropdown menu-->
+                                <div class="dropdown-menu dropdown-menu-right animated flipInX">
+                                    <div class="dropdown-item">
+                                        <!-- START list group-->
+                                        <div class="list-group">
+                                            <!-- list item-->
+                                            <div class="list-group-item list-group-item-action">
+                                                <div class="media">
+                                                    <div class="align-self-start mr-2">
+                                                        <em class="fa fa-twitter fa-2x text-info"></em>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="m-0">New followers</p>
+                                                        <p class="m-0 text-muted text-sm">1 new follower</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- list item-->
+                                            <div class="list-group-item list-group-item-action">
+                                                <div class="media">
+                                                    <div class="align-self-start mr-2">
+                                                        <em class="fa fa-envelope fa-2x text-warning"></em>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="m-0">New e-mails</p>
+                                                        <p class="m-0 text-muted text-sm">You have 10 new emails</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- list item-->
+                                            <div class="list-group-item list-group-item-action">
+                                                <div class="media">
+                                                    <div class="align-self-start mr-2">
+                                                        <em class="fa fa-tasks fa-2x text-success"></em>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="m-0">Pending Tasks</p>
+                                                        <p class="m-0 text-muted text-sm">11 pending task</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- last list item-->
+                                            <div class="list-group-item list-group-item-action">
+                                                <span class="d-flex align-items-center">
+                                                    <span class="text-sm">More notifications</span>
+                                                    <span class="badge badge-danger ml-auto">14</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- END list group-->
+                                    </div>
+                                </div>
+                                <!-- END Dropdown menu-->
+                            </li>
+                            <!-- END Alert menu-->
+                            <!-- START Offsidebar button-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle-state="offsidebar-open" data-no-persist="true">
+                                    <em class="icon-notebook"></em>
+                                </a>
+                            </li>
+                            <!-- END Offsidebar menu-->
+                        </ul>
+                        <!-- END Right Navbar-->
+                        <!-- START Search form-->
+                        <form class="navbar-form" role="search" action="search.html">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Type and hit enter ...">
+                                <div class="fa fa-times navbar-form-close" data-search-dismiss=""></div>
+                            </div>
+                            <button class="d-none" type="submit">Submit</button>
+                        </form>
+                        <!-- END Search form-->
+                    </nav>
+                    <!-- END Top Navbar-->
+                </header>
+                <!-- sidebar-->
+                <aside class="aside-container">
+                    <!-- START Sidebar (left)-->
+                    <div class="aside-inner">
+                        <nav class="sidebar" data-sidebar-anyclick-close="">
+                            <!-- START sidebar nav-->
+                            <ul class="sidebar-nav">
+                                <!-- START user info-->
+                                <li class="has-user-block">
+                                    <div class="collapse" id="user-block">
+                                        <div class="item user-block">
+                                            <!-- User picture-->
+                                            <div class="user-block-picture">
+                                                <div class="user-block-status">
+                                                    @{
+                                                        string userimg = string.Empty;
+                                                        if (string.IsNullOrEmpty(Convert.ToString(Session["EPhoto"])))
+                                                        {
+                                                            userimg = "~/Content/Template/img/default-user.png";
+                                                        }
+                                                        else
+                                                        {
+                                                            userimg = Convert.ToString(Session["EPhoto"]);
+                                                        }
+
+                                                    }
+                                                    <img class="img-thumbnail rounded-circle" src="@Url.Content(userimg)" alt="Avatar" width="60" height="60">
+                                                    <div class="circle bg-success circle-lg"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Name and Job-->
+                                            <div class="user-block-info">
+                                                <span class="user-block-name">Hello, @Session["UserName"]</span>
+                                                <span class="user-block-role">@Session["Designation"]</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                @{
+                                    if (Session["UserTypeID"] != null)
+                                    {
+                                        var usertype = Convert.ToInt32(Convert.ToString(Session["UserTypeID"]));
+                                        if (Session["BranchTypeID"] != null)
+                                        {
+                                            if (usertype != 1) // User(User Type)
+                                            {
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.HEADER">Main Navigation</span>
+                                                </li>
+
+                                                <li class=" ">
+
+                                                    <a href="@Url.Action("Index", "Home")" title="Desboard">
+                                                        <em class="icon-speedometer"></em>
+                                                        <span data-localize="sidebar.nav.WIDGETS">Deshboard</span>
+                                                    </a>
+                                                </li>
+                                                <!--Configuation-->
+                                            }
+                                            if (usertype == 1) // Admin(User Type)
+                                            {
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">User Setting</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblUserTypes")" title="User Types">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">User Types</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblUsers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Users</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Companies</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblCompanies")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Companies</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="@Url.Action("RegistrationForm", "CompanyRegistration")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Company Registeration</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Account Setting</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblAccountHeads")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Account Head's</span>
+                                                    </a>
+                                                </li>
+
+                                            }
+
+                                            if (usertype == 2) // User(User Type)
+                                            {
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Sub Branchs</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblBranches")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Branch's</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="@Url.Action("SubBranchUser", "tblUsers")" title="Sub Branch's Users">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Users</span>
+                                                    </a>
+                                                </li>
+                                                var BranchTypeID = Convert.ToInt32(Convert.ToString(Session["BranchTypeID"]));
+                                                if (BranchTypeID == 1) // Head Office (Branch Type)
+                                                {
+
+
+                                                    <li class=" ">
+                                                        <a href="@Url.Action("Create", "tblBranches")" title="Companies">
+                                                            <em class="icon-chemistry"></em>
+                                                            <span data-localize="sidebar.nav.element.ELEMENTS">New Branch</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class=" ">
+                                                        <a href="@Url.Action("Employees", "CompanyEmployee")" title="Companies">
+                                                            <em class="icon-chemistry"></em>
+                                                            <span data-localize="sidebar.nav.element.ELEMENTS">Employee Registeration</span>
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li class=" ">
+                                                        <a href="@Url.Action("EmployeeSalary", "CompanyEmployee")" title="Employee Salary">
+                                                            <em class="icon-chemistry"></em>
+                                                            <span data-localize="sidebar.nav.element.ELEMENTS">Payroll</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class=" ">
+                                                        <a href="@Url.Action("SalaryHistory", "CompanyEmployee")" title="Paid Salaries History">
+                                                            <em class="icon-chemistry"></em>
+                                                            <span data-localize="sidebar.nav.element.ELEMENTS">Paid Salaries History</span>
+                                                        </a>
+                                                    </li>
+
+                                                }
+                                                if (BranchTypeID > 1)
+                                                {
+                                                    <li class="nav-heading ">
+                                                        <span data-localize="sidebar.heading.COMPONENTS">Employee's</span>
+                                                    </li>
+                                                    <li class=" ">
+                                                        <a href="@Url.Action("Employee", "BranchEmployee")" title="Companies">
+                                                            <em class="icon-chemistry"></em>
+                                                            <span data-localize="sidebar.nav.element.ELEMENTS">Employee Registeration</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class=" ">
+                                                        <a href="@Url.Action("EmployeeSalary", "CompanyEmployee")" title="Employee Salary">
+                                                            <em class="icon-chemistry"></em>
+                                                            <span data-localize="sidebar.nav.element.ELEMENTS">Payroll</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" ">
+                                                        <a href="@Url.Action("SalaryHistory", "CompanyEmployee")" title="Paid Salaries History">
+                                                            <em class="icon-chemistry"></em>
+                                                            <span data-localize="sidebar.nav.element.ELEMENTS">Paid Salaries History</span>
+                                                        </a>
+                                                    </li>
+                                                }
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Stock</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblCategories")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Stock Categories</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblStocks")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Stock Details</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Account Setting</span>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblAccountControls")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Account Controls</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblAccountSubControls")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Account Sub Controls</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblAccountSettings")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Account Flow</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                            if (usertype == 1)
+                                            {
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Financial Year Setting</span>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblFinancialYears")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Financial Year</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Create", "tblFinancialYears")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">New Financial Year</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                            if (usertype == 2)
+                                            {
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Financial Years</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "FinancialYear")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">All Financial Years</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                            <li class="nav-heading ">
+                                                <span data-localize="sidebar.heading.COMPONENTS">Customer's</span>
+                                            </li>
+                                            if (usertype == 2)
+                                            {
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Create", "tblCustomers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">New Customer's</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblCustomers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Branch Customer's</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("SubBranchCustomer", "tblCustomers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Sub Branch Customer's</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Sale's</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("NewSale", "SaleCart")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">New Sale</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("RemainingPaymentList", "SalePayment")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Sale Pending Payment</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("CustomSalesHistory", "SalePayment", new { FromDate = DateTime.Now, ToDate = DateTime.Now })" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">All Sale's</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("FindSale", "SalesReturn")" title="Sale's Return">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Sale's Return</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="@Url.Action("AllReturnSalesPendingAmount", "SalePaymentReturn")" title="Sale's Return">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Return Sales Pending Amount</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                            if (usertype == 1)
+                                            {
+                                                <li class=" ">
+                                                    <a href="@Url.Action("AllCustomer", "tblCustomers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">All Customer's</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                            <li class="nav-heading ">
+                                                <span data-localize="sidebar.heading.COMPONENTS">Supplier's</span>
+                                            </li>
+                                            if (usertype == 2)
+                                            {
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Create", "tblSuppliers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">New Supplier's</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Index", "tblSuppliers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Branch Supplier's</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("SubBranchSupplier", "tblSuppliers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Sub Branch Supplier's</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Purchase</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("NewPurchase", "PurchaseCart")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">New Purchase</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("RemainingPaymentList", "PurchasePayment")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Purchase Pending Payment</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("CustomPurchasesHistory", "PurchasePayment", new { FromDate = DateTime.Now, ToDate = DateTime.Now })" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">All Purchase's</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("FindPurchase", "PurchasesReturn")" title="Purchase Return">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Purchase's Return</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("AllPurchasesPendingPayment", "PurchasePaymentReturn")" title="Return Purchases Payment Pending">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Return Payment Pending</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-heading ">
+                                                    <span data-localize="sidebar.heading.COMPONENTS">Tranactions</span>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("GeneralTransaction", "GeneralTransactions", new { transaction = new CloudERP.Models.GeneralTransactionMV() { CreditAccountControlID = 0, DebitAccountControlID = 0, TransferAmount = 0 } })" title="New General Transaction">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">General Transaction</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("Journal", "GeneralTransactions")" title="New General Transaction">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Journal</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("GetLedger", "Ledger")" title="Accounts Ledger">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Accounts Ledger</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("GetTrialBalance", "TrialBalance")" title="Trial Balance">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Trial Balance</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("GetIncomeStatement", "IncomeStatement")" title="Income Statement">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Income Statement</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="@Url.Action("BalanceSheet", "BalanceSheets")" title="Balance Sheet">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">Balance Sheet</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                            if (usertype == 1)
+                                            {
+                                                <li class=" ">
+                                                    <a href="@Url.Action("AllSupplier", "tblSuppliers")" title="Companies">
+                                                        <em class="icon-chemistry"></em>
+                                                        <span data-localize="sidebar.nav.element.ELEMENTS">All Supplier's</span>
+                                                    </a>
+                                                </li>
+                                            }
+
+                                        }
+                                    }
+                                }
+
+                            </ul>
+                            <!-- END sidebar nav-->
+                        </nav>
+                    </div>
+                    <!-- END Sidebar (left)-->
+                </aside>
+                <!-- offsidebar-->
+                <aside class="offsidebar d-none">
+                    <!-- START Off Sidebar (right)-->
+                    <nav>
+                        <div role="tabpanel">
+                            <!-- Nav tabs-->
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" href="#app-settings" aria-controls="app-settings" role="tab" data-toggle="tab">
+                                        <em class="icon-equalizer fa-lg"></em>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="#app-chat" aria-controls="app-chat" role="tab" data-toggle="tab">
+                                        <em class="icon-user fa-lg"></em>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes-->
+                            <div class="tab-content">
+                                <div class="tab-pane fade active show" id="app-settings" role="tabpanel">
+                                    <h3 class="text-center text-thin mt-4">Settings</h3>
+                                    <div class="p-2">
+                                        <h4 class="text-muted text-thin">Themes</h4>
+                                        <div class="row row-flush mb-2">
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-a.css">
+                                                        <input type="radio" name="setting-theme" checked="checked">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-info"></span>
+                                                            <span class="color bg-info-light"></span>
+                                                        </span>
+                                                        <span class="color bg-white"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-b.css">
+                                                        <input type="radio" name="setting-theme">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-green"></span>
+                                                            <span class="color bg-green-light"></span>
+                                                        </span>
+                                                        <span class="color bg-white"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-c.css">
+                                                        <input type="radio" name="setting-theme">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-purple"></span>
+                                                            <span class="color bg-purple-light"></span>
+                                                        </span>
+                                                        <span class="color bg-white"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-d.css">
+                                                        <input type="radio" name="setting-theme">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-danger"></span>
+                                                            <span class="color bg-danger-light"></span>
+                                                        </span>
+                                                        <span class="color bg-white"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-flush mb-2">
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-e.css">
+                                                        <input type="radio" name="setting-theme">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-info-dark"></span>
+                                                            <span class="color bg-info"></span>
+                                                        </span>
+                                                        <span class="color bg-gray-dark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-f.css">
+                                                        <input type="radio" name="setting-theme">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-green-dark"></span>
+                                                            <span class="color bg-green"></span>
+                                                        </span>
+                                                        <span class="color bg-gray-dark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-g.css">
+                                                        <input type="radio" name="setting-theme">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-purple-dark"></span>
+                                                            <span class="color bg-purple"></span>
+                                                        </span>
+                                                        <span class="color bg-gray-dark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col mb-2">
+                                                <div class="setting-color">
+                                                    <label data-load-css="~/Content/Template/css/theme-h.css">
+                                                        <input type="radio" name="setting-theme">
+                                                        <span class="icon-check"></span>
+                                                        <span class="split">
+                                                            <span class="color bg-danger-dark"></span>
+                                                            <span class="color bg-danger"></span>
+                                                        </span>
+                                                        <span class="color bg-gray-dark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <h4 class="text-muted text-thin">Layout</h4>
+                                        <div class="clearfix">
+                                            <p class="float-left">Fixed</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-fixed" type="checkbox" data-toggle-state="layout-fixed">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <p class="float-left">Boxed</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-boxed" type="checkbox" data-toggle-state="layout-boxed">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <p class="float-left">RTL</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-rtl" type="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <h4 class="text-muted text-thin">Aside</h4>
+                                        <div class="clearfix">
+                                            <p class="float-left">Collapsed</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-collapsed" type="checkbox" data-toggle-state="aside-collapsed">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <p class="float-left">Collapsed Text</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-collapsed-text" type="checkbox" data-toggle-state="aside-collapsed-text">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <p class="float-left">Float</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-float" type="checkbox" data-toggle-state="aside-float">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <p class="float-left">Hover</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-hover" type="checkbox" data-toggle-state="aside-hover">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <p class="float-left">Show Scrollbar</p>
+                                            <div class="float-right">
+                                                <label class="switch">
+                                                    <input id="chk-scroll" type="checkbox" data-toggle-state="show-scrollbar" data-target=".sidebar">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="app-chat" role="tabpanel">
+                                    <h3 class="text-center text-thin mt-4">Connections</h3>
+                                    <div class="list-group">
+                                        <!-- START list title-->
+                                        <div class="list-group-item border-0">
+                                            <small class="text-muted">ONLINE</small>
+                                        </div>
+                                        <!-- END list title-->
+                                        <div class="list-group-item list-group-item-action border-0">
+                                            <div class="media">
+                                                <img class="align-self-center mr-3 rounded-circle thumb48" src="~/Content/Template/img/user/05.jpg" alt="Image">
+                                                <div class="media-body text-truncate">
+                                                    <a href="#">
+                                                        <strong>Juan Sims</strong>
+                                                    </a>
+                                                    <br>
+                                                    <small class="text-muted">Designeer</small>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <span class="circle bg-success circle-lg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border-0">
+                                            <div class="media">
+                                                <img class="align-self-center mr-3 rounded-circle thumb48" src="~/Content/Template/img/user/06.jpg" alt="Image">
+                                                <div class="media-body text-truncate">
+                                                    <a href="#">
+                                                        <strong>Maureen Jenkins</strong>
+                                                    </a>
+                                                    <br>
+                                                    <small class="text-muted">Designeer</small>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <span class="circle bg-success circle-lg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border-0">
+                                            <div class="media">
+                                                <img class="align-self-center mr-3 rounded-circle thumb48" src="~/Content/Template/img/user/07.jpg" alt="Image">
+                                                <div class="media-body text-truncate">
+                                                    <a href="#">
+                                                        <strong>Billie Dunn</strong>
+                                                    </a>
+                                                    <br>
+                                                    <small class="text-muted">Designeer</small>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <span class="circle bg-danger circle-lg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border-0">
+                                            <div class="media">
+                                                <img class="align-self-center mr-3 rounded-circle thumb48" src="~/Content/Template/img/user/08.jpg" alt="Image">
+                                                <div class="media-body text-truncate">
+                                                    <a href="#">
+                                                        <strong>Tomothy Roberts</strong>
+                                                    </a>
+                                                    <br>
+                                                    <small class="text-muted">Designeer</small>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <span class="circle bg-warning circle-lg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START list title-->
+                                        <div class="list-group-item border-0">
+                                            <small class="text-muted">OFFLINE</small>
+                                        </div>
+                                        <!-- END list title-->
+                                        <div class="list-group-item list-group-item-action border-0">
+                                            <div class="media">
+                                                <img class="align-self-center mr-3 rounded-circle thumb48" src="~/Content/Template/img/user/09.jpg" alt="Image">
+                                                <div class="media-body text-truncate">
+                                                    <a href="#">
+                                                        <strong>Lawrence Robinson</strong>
+                                                    </a>
+                                                    <br>
+                                                    <small class="text-muted">Designeer</small>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <span class="circle bg-warning circle-lg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border-0">
+                                            <div class="media">
+                                                <img class="align-self-center mr-3 rounded-circle thumb48" src="~/Content/Template/img/user/10.jpg" alt="Image">
+                                                <div class="media-body text-truncate">
+                                                    <a href="#">
+                                                        <strong>Tyrone Owens</strong>
+                                                    </a>
+                                                    <br>
+                                                    <small class="text-muted">Designeer</small>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <span class="circle bg-warning circle-lg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 py-4 text-center">
+                                        <!-- Optional link to list more users-->
+                                        <a class="btn btn-purple btn-sm" href="#" title="See more contacts">
+                                            <strong>Load more..</strong>
+                                        </a>
+                                    </div>
+                                    <!-- Extra items-->
+                                    <div class="px-3 py-2">
+                                        <p>
+                                            <small class="text-muted">Tasks completion</small>
+                                        </p>
+                                        <div class="progress progress-xs m-0">
+                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                                <span class="sr-only">80% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 py-2">
+                                        <p>
+                                            <small class="text-muted">Upload quota</small>
+                                        </p>
+                                        <div class="progress progress-xs m-0">
+                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                <span class="sr-only">40% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- END Off Sidebar (right)-->
+                </aside>
+          
+        
+        <section class="section-container">
+            <!-- Page content-->
+            <div class="content-wrapper">
+                <div class="content-heading">
+                    <div>
+                        @ViewBag.Title
+                        @*<small>Subtitle</small>*@
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-container">
+            <span>&copy; 2019 - Small Business</span>
+        </footer>
+    </div>
+    <!-- =============== VENDOR SCRIPTS ===============-->
+    <!-- MODERNIZR-->
+    <script src="~/Content/Template/vendor/modernizr/modernizr.custom.js"></script>
+    <!-- JQUERY-->
+    <script src="~/Content/Template/vendor/jquery/dist/jquery.js"></script>
+    <!-- BOOTSTRAP-->
+    <script src="~/Content/Template/vendor/popper.js/dist/umd/popper.js"></script>
+    <script src="~/Content/Template/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- STORAGE API-->
+    <script src="~/Content/Template/vendor/js-storage/js.storage.js"></script>
+    <!-- JQUERY EASING-->
+    <script src="~/Content/Template/vendor/jquery.easing/jquery.easing.js"></script>
+    <!-- ANIMO-->
+    <script src="~/Content/Template/vendor/animo/animo.js"></script>
+    <!-- SCREENFULL-->
+    <script src="~/Content/Template/vendor/screenfull/dist/screenfull.js"></script>
+    <!-- LOCALIZE-->
+    <script src="~/Content/Template/vendor/jquery-localize/dist/jquery.localize.js"></script>
+    <script src="~/Content/Template/vendor/jquery-sparkline/jquery.sparkline.js"></script>
+    <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+    <script src="~/Content/Template/vendor/jquery-bootgrid/dist/jquery.bootgrid.js"></script>
+    <script src="~/Content/Template/vendor/jquery-bootgrid/dist/jquery.bootgrid.fa.js"></script>
+    <!-- JQUERY VALIDATE-->
+    <script src="~/Content/Template/vendor/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/Content/Template/vendor/jquery-validation/dist/additional-methods.js"></script>
+    <!-- JQUERY STEPS-->
+    <script src="~/Content/Template/vendor/jquery-steps/build/jquery.steps.js"></script>
+    <!--DataTables-->
+    <script src="~/Content/Template/vendor/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-buttons/js/dataTables.buttons.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-buttons-bs/js/buttons.bootstrap.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-buttons/js/buttons.colVis.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-buttons/js/buttons.flash.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-buttons/js/buttons.html5.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-buttons/js/buttons.print.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-keytable/js/dataTables.keyTable.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-responsive/js/dataTables.responsive.js"></script>
+    <script src="~/Content/Template/vendor/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="~/Content/Template/vendor/jszip/dist/jszip.js"></script>
+    <script src="~/Content/Template/vendor/pdfmake/build/pdfmake.js"></script>
+    <script src="~/Content/Template/vendor/pdfmake/build/vfs_fonts.js"></script>
+    <script src="~/Content/Template/vendor/flot/jquery.flot.js"></script>
+    <script src="~/Content/Template/vendor/jquery.flot.tooltip/js/jquery.flot.tooltip.js"></script>
+    <script src="~/Content/Template/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="~/Content/Template/vendor/flot/jquery.flot.pie.js"></script>
+    <script src="~/Content/Template/vendor/flot/jquery.flot.time.js"></script>
+    <script src="~/Content/Template/vendor/flot/jquery.flot.categories.js"></script>
+    <script src="~/Content/Template/vendor/jquery.flot.spline/jquery.flot.spline.js"></script>
+    <!-- EASY PIE CHART-->
+    <script src="~/Content/Template/vendor/easy-pie-chart/dist/jquery.easypiechart.js"></script>
+    <!-- MOMENT JS-->
+    <script src="~/Content/Template/vendor/moment/min/moment-with-locales.js"></script>
+    <!-- =============== APP SCRIPTS ===============-->
+    <script src="~/Content/Template/js/app.js"></script>
+</body>
+</html>
